@@ -56,17 +56,23 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\scripts\Skill.cs" />
-    <Compile Include="Assets\scripts\SkillParameter.cs" />
-    <Compile Include="Assets\scripts\ActiveSkill.cs" />
-    <Compile Include="Assets\scripts\DamageSkill.cs" />
-    <Compile Include="Assets\scripts\BuffSkill.cs" />
-    <Compile Include="Assets\scripts\PassiveSkill.cs" />
-    <Compile Include="Assets\scripts\UltimateSkill.cs" />
-    <Compile Include="Assets\scripts\CommonSkill.cs" />
-    <Compile Include="Assets\scripts\SkillAnimation.cs" />
-    <Compile Include="Assets\scripts\SkillSound.cs" />
-    <Compile Include="Assets\scripts\character.cs" />
+    <Compile Include="Assets\scripts\Skill\ActiveSkill.cs" />
+    <Compile Include="Assets\scripts\Skill\character.cs" />
+    <Compile Include="Assets\scripts\Skill\SkillAnimation.cs" />
+    <Compile Include="Assets\scripts\Skill\Skill.cs" />
+    <Compile Include="Assets\scripts\Inventory\Gemstone.cs" />
+    <Compile Include="Assets\scripts\Skill\CommonSkill.cs" />
+    <Compile Include="Assets\scripts\Skill\DamageSkill.cs" />
+    <Compile Include="Assets\scripts\Skill\SkillSound.cs" />
+    <Compile Include="Assets\scripts\Skill\PassiveSkill.cs" />
+    <Compile Include="Assets\scripts\Inventory\ItemParameter.cs" />
+    <Compile Include="Assets\scripts\Inventory\OnlyCharaterEquip.cs" />
+    <Compile Include="Assets\scripts\Skill\SkillParameter.cs" />
+    <Compile Include="Assets\scripts\Skill\BuffSkill.cs" />
+    <Compile Include="Assets\scripts\Skill\UltimateSkill.cs" />
+    <Compile Include="Assets\scripts\Skill\Actve\Charater1_1.cs" />
+    <Compile Include="Assets\Skilldata.cs" />
+    <Compile Include="Assets\Skilldatas.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
