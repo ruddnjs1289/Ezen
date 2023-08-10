@@ -5,19 +5,22 @@ using System.IO;
 using System;
 using Newtonsoft.Json;
 
-#region Å¸ÀÓ¶óÀÎ
+#region íƒ€ì„ë¼ì¸
 /*
 20230809
 Dictionary<string, string> DataRead(string sPath)
-json µ¥ÀÌÅÍ ÀĞ¾î¿À±â ±¸Çö
+json ë°ì´í„° ì½ì–´ì˜¤ê¸° êµ¬í˜„
 public void DataWrite(string sPath, Dictionary<string, string> dicData)
-Dictionary µ¥ÀÌÅÍ json µ¥ÀÌÅÍ·Î ÀúÀå
+Dictionary ë°ì´í„° json ë°ì´í„°ë¡œ ì €ì¥
 
-Ãß°¡ÇØ¾ßÇÒ ±â´É
-°ÔÀÓ ½ÃÀÛ½Ã °ÔÀÓ µ¥ÀÌÅÍ È®ÀÎ -> Á¦´ë·Î ±ò·È´ÂÁö, ¾÷µ¥ÀÌÆ® µÇ¾ú´ÂÁö
-°ÔÀÓ ½ÃÀÛ½Ã °èÁ¤¿¡ ÀúÀåµÈ µ¥ÀÌÅÍ ÃÊ±âÈ­ Ãß°¡
-·Îµå ¾À Ãß°¡
-·Îµù ±â´É Ãß°¡
+20230810
+DataRead Writeì— try catch ì¶”ê°€
+
+ì¶”ê°€í•´ì•¼í•  ê¸°ëŠ¥
+ê²Œì„ ì‹œì‘ì‹œ ê²Œì„ ë°ì´í„° í™•ì¸ -> ì œëŒ€ë¡œ ê¹”ë ¸ëŠ”ì§€, ì—…ë°ì´íŠ¸ ë˜ì—ˆëŠ”ì§€
+ê²Œì„ ì‹œì‘ì‹œ ê³„ì •ì— ì €ì¥ëœ ë°ì´í„° ì´ˆê¸°í™” ì¶”ê°€
+ë¡œë“œ ì”¬ ì¶”ê°€
+ë¡œë”© ê¸°ëŠ¥ ì¶”ê°€
 */
 #endregion
 public class GameManager : MonoBehaviour
@@ -28,7 +31,7 @@ public class GameManager : MonoBehaviour
     
     void Awake()
     {
-        #region ½Ì±ÛÅæ
+        #region ì‹±ê¸€í†¤
         if (instance == null)
         {
             instance = this;
@@ -46,47 +49,47 @@ public class GameManager : MonoBehaviour
     // Initialize
     private void InitalizeGameData(string sId)
     {
-        // µ¥ÀÌÅÍ º£ÀÌ½º¿¡¼­ ±Ü¾î¿Í¼­ ÃÊ±âÈ­//
+        // ë°ì´í„° ë² ì´ìŠ¤ì—ì„œ ê¸ì–´ì™€ì„œ ì´ˆê¸°í™”//
     }
     // LoadScene
     //public void LoadScene(string sSceneName)
     //{
     //    SceneManager.LoadScene(sSceneName);
-    //    // ¾À ·ÎµåÇÒ ¶§ Ã³¸®ÇØÁÖ¾î¾ßÇÒ°Íµé
-    //    // ¹è°æÀ½¾Ç Àç»ı
-    //    // ½ºÅ×ÀÌÁö ÆÑÅä¸® Á¤¸®
-    //    // ¿­·ÁÀÖ´Â Ã¢ÀÌÀÖÀ¸¸é Á¤¸®
-    //    // µ¥ÀÌÅÍ ÀúÀå
-    //    // µîµî
+    //    // ì”¬ ë¡œë“œí•  ë•Œ ì²˜ë¦¬í•´ì£¼ì–´ì•¼í• ê²ƒë“¤
+    //    // ë°°ê²½ìŒì•… ì¬ìƒ
+    //    // ìŠ¤í…Œì´ì§€ íŒ©í† ë¦¬ ì •ë¦¬
+    //    // ì—´ë ¤ìˆëŠ” ì°½ì´ìˆìœ¼ë©´ ì •ë¦¬
+    //    // ë°ì´í„° ì €ì¥
+    //    // ë“±ë“±
     //}
 
     // DataRead
-    // µ¥ÀÌÅÍ ÁÖ¼Ò ¹Ş¾Æ¿Í¼­ ±× ÁÖ¼ÒÀÇ json ÆÄÀÏÀ» Dictionary ÇüÅÂ·Î µ¥ÀÌÅÍ ¹İÈ¯
+    // ë°ì´í„° ì£¼ì†Œ ë°›ì•„ì™€ì„œ ê·¸ ì£¼ì†Œì˜ json íŒŒì¼ì„ Dictionary í˜•íƒœë¡œ ë°ì´í„° ë°˜í™˜
     public Dictionary<string, string> DataRead(string sPath)
     {
         try
         {
-            // ÀÓ½Ã º¯¼ö ¼±¾ğ, °æ·ÎÀÇ ÆÄÀÏ ÀĞ¾î¿À±â
+            // ì„ì‹œ ë³€ìˆ˜ ì„ ì–¸, ê²½ë¡œì˜ íŒŒì¼ ì½ì–´ì˜¤ê¸°
             string sData = File.ReadAllText(sPath);
-            // ÀÓ½Ã Dictionary ¼±¾ğ Newtonsoft.json ÀÇ Å¬·¡½º¸¦ »ç¿ëÇØ jsonÀ» Dictionary·Î ¹Ù²Ş
+            // ì„ì‹œ Dictionary ì„ ì–¸ Newtonsoft.json ì˜ í´ë˜ìŠ¤ë¥¼ ì‚¬ìš©í•´ jsonì„ Dictionaryë¡œ ë°”ê¿ˆ
             Dictionary<string, string> dicResult = JsonConvert.DeserializeObject<Dictionary<string, string>>(sData);
-            //Dictionary ¹İÈ¯
+            //Dictionary ë°˜í™˜
             return dicResult;
         }
         catch (Exception ex)
         {
-            Debug.LogError($"[{sPath}]¿¡¼­ µ¥ÀÌÅÍ ÀĞ±â¿¡ ½ÇÆĞÇÏ¿´½À´Ï´Ù.{ex}");
+            Debug.LogError($"[{sPath}]ì—ì„œ ë°ì´í„° ì½ê¸°ì— ì‹¤íŒ¨í•˜ì˜€ìŠµë‹ˆë‹¤.{ex}");
             return null;
         }
 
     }
     // DataWrite
-    // µ¥ÀÌÅÍ ÁÖ¼Ò¿Í Dictionary ÇüÅÂ·Î µ¥ÀÌÅÍ¸¦ ¹Ş¾Æ¿Í json ÆÄÀÏ·Î ÀúÀå
+    // ë°ì´í„° ì£¼ì†Œì™€ Dictionary í˜•íƒœë¡œ ë°ì´í„°ë¥¼ ë°›ì•„ì™€ json íŒŒì¼ë¡œ ì €ì¥
     public void DataWrite(string sPath, Dictionary<string, string> dicData)
     {
-        // Newtonsoft.json ÀÇ Å¬·¡½º¸¦ »ç¿ëÇØ Dictionay¸¦ jsonÀ¸·Î ¹Ù²Ş
+        // Newtonsoft.json ì˜ í´ë˜ìŠ¤ë¥¼ ì‚¬ìš©í•´ Dictionayë¥¼ jsonìœ¼ë¡œ ë°”ê¿ˆ
         string sJson = JsonConvert.SerializeObject(dicData);
-        // °æ·Î¿¡ json ÆÄÀÏ ÀúÀå
+        // ê²½ë¡œì— json íŒŒì¼ ì €ì¥
         if(sJson == null)
         {
             Debug.Log("Failed to SerializeObject dictionary to json");
@@ -96,7 +99,7 @@ public class GameManager : MonoBehaviour
     } 
 }
 
-#region Å×½ºÆ®
+#region í…ŒìŠ¤íŠ¸
 /*
         string path = Application.persistentDataPath + "/";
         string filename = "testFile.json";
