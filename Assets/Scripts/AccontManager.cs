@@ -6,7 +6,7 @@ using UnityEngine;
 /*
 
 추가해야할 기능
-제일 먼저 실행되어야함
+게임 기본 데이터 확인 후 계정확인 실행
 데이터 베이스 연동기능
 구글 로그인
 자체 서버 로그인
@@ -17,7 +17,15 @@ using UnityEngine;
 #endregion
 public class AccontManager : MonoBehaviour
 {
+    private int nGameId;
 
+    public int NGameId
+    {
+        get
+        {
+            return nGameId;
+        }
+    }
     void Start()
     {
         

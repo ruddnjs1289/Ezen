@@ -10,8 +10,8 @@ CurrentTime
 StartTime
 EndTime
 ElapedTime
-단순 get set은 중복해서 설정할때 꼬임 발생
-함수로 나누어 할당해야 한다
+
+
 
 추가해야할 기능
 이렇게 하면 중복 시간 체크시 문제 발생
