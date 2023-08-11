@@ -6,18 +6,26 @@ using System;
 using Newtonsoft.Json;
 
 #region 타임라인
-/*
-20230809
-Dictionary<string, string> DataRead(string sPath)
-json 데이터 읽어오기 구현
-public void DataWrite(string sPath, Dictionary<string, string> dicData)
-Dictionary 데이터 json 데이터로 저장
-
-20230810
-DataRead Write에 try catch 추가
+/*20230809
+ * Dictionary<string, string> DataRead(string sPath)
+ * json 데이터 읽어오기 구현
+ * public void DataWrite(string sPath, Dictionary<string, string> dicData)
+ * Dictionary 데이터 json 데이터로 저장
+ */
+/*20230810
+ * DataRead DataWrite에 try catch 추가
+ */
+/* 
+ * 
+ * 
+ * 
 
 추가해야할 기능
 게임 시작시 게임 데이터 확인 -> 제대로 깔렸는지, 업데이트 되었는지
+************ 중요
+무슨 데이터 가지고 있을것인지?   캐릭터 선택값 스킬 선택값 등등
+CurrentState 같이 현재 정보들을 가지고 있어야할듯
+************
 게임 시작시 계정에 저장된 데이터 초기화 추가
 로드 씬 추가
 로딩 기능 추가
@@ -49,7 +57,8 @@ public class GameManager : MonoBehaviour
     // Initialize
     private void InitalizeGameData(string sId)
     {
-        // 데이터 베이스에서 긁어와서 초기화//
+        // 데이터 베이스에서 긁어와서 초기화
+        // 아직 잘 모르겠음
     }
     // LoadScene
     //public void LoadScene(string sSceneName)
@@ -72,9 +81,9 @@ public class GameManager : MonoBehaviour
             // 임시 변수 선언, 경로의 파일 읽어오기
             string sData = File.ReadAllText(sPath);
             // 임시 Dictionary 선언 Newtonsoft.json 의 클래스를 사용해 json을 Dictionary로 바꿈
-            Dictionary<string, string> dicResult = JsonConvert.DeserializeObject<Dictionary<string, string>>(sData);
+            Dictionary<string, string> dictResult = JsonConvert.DeserializeObject<Dictionary<string, string>>(sData);
             //Dictionary 반환
-            return dicResult;
+            return dictResult;
         }
         catch (Exception ex)
         {
@@ -85,12 +94,12 @@ public class GameManager : MonoBehaviour
     }
     // DataWrite
     // 데이터 주소와 Dictionary 형태로 데이터를 받아와 json 파일로 저장
-    public void DataWrite(string sPath, Dictionary<string, string> dicData)
+    public void DataWrite(string sPath, Dictionary<string, string> dictData)
     {
         try
         {
             // Newtonsoft.json 의 클래스를 사용해 Dictionay를 json으로 바꿈
-            string sJson = JsonConvert.SerializeObject(dicData);
+            string sJson = JsonConvert.SerializeObject(dictData);
             // 경로에 json 파일 저장
             File.WriteAllText(sPath, sJson);
         }
