@@ -1,0 +1,477 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7502245294f0f446b8f99365dca4c2f, type: 3}
+  m_Name: Skilldata_
+  m_EditorClassIdentifier: 
+  Skills:
+  - fId: 1
+    sName: "\uC774\uB984"
+    fSkillLevel: 100
+    sDiscription: "\uD55C\uBC1C\uB0A8\uC558\uB2E4"
+    fSkillRequireExp: 100
+    fSkillExp: 0
+    fUnlockLevel: 1
+    fUnlockHidenLevel: 4
+    fTimer: 0
+    fCoolTime: 2
+    fDuration: 4
+    fSkillCoolReduce: 0
+    fBuffDuration: 0
+    fRange: 5
+    fValue: 100
+    fMagnification: 20
+    fTargetCount: 1
+    fAttackCount: 1
+    fBulletCount: 1
+    isUnlockSkill: 1
+    canUse: 1
+    isAtctivate: 0
+  - fId: 0
+    sName: 
+    fSkillLevel: 0
+    sDiscription: 
+    fSkillRequireExp: 0
+    fSkillExp: 0
+    fUnlockLevel: 0
+    fUnlockHidenLevel: 0
+    fTimer: 0
+    fCoolTime: 0
+    fDuration: 0
+    fSkillCoolReduce: 0
+    fBuffDuration: 0
+    fRange: 0
+    fValue: 0
+    fMagnification: 0
+    fTargetCount: 0
+    fAttackCount: 0
+    fBulletCount: 0
+    isUnlockSkill: 0
+    canUse: 0
+    isAtctivate: 0
+  - fId: 0
+    sName: 
+    fSkillLevel: 0
+    sDiscription: 
+    fSkillRequireExp: 0
+    fSkillExp: 0
+    fUnlockLevel: 0
+    fUnlockHidenLevel: 0
+    fTimer: 0
+    fCoolTime: 0
+    fDuration: 0
+    fSkillCoolReduce: 0
+    fBuffDuration: 0
+    fRange: 0
+    fValue: 0
+    fMagnification: 0
+    fTargetCount: 0
+    fAttackCount: 0
+    fBulletCount: 0
+    isUnlockSkill: 0
+    canUse: 0
+    isAtctivate: 0
+  - fId: 0
+    sName: 
+    fSkillLevel: 0
+    sDiscription: 
+    fSkillRequireExp: 0
+    fSkillExp: 0
+    fUnlockLevel: 0
+    fUnlockHidenLevel: 0
+    fTimer: 0
+    fCoolTime: 0
+    fDuration: 0
+    fSkillCoolReduce: 0
+    fBuffDuration: 0
+    fRange: 0
+    fValue: 0
+    fMagnification: 0
+    fTargetCount: 0
+    fAttackCount: 0
+    fBulletCount: 0
+    isUnlockSkill: 0
+    canUse: 0
+    isAtctivate: 0
+  - fId: 0
+    sName: 
+    fSkillLevel: 0
+    sDiscription: 
+    fSkillRequireExp: 0
+    fSkillExp: 0
+    fUnlockLevel: 0
+    fUnlockHidenLevel: 0
+    fTimer: 0
+    fCoolTime: 0
+    fDuration: 0
+    fSkillCoolReduce: 0
+    fBuffDuration: 0
+    fRange: 0
+    fValue: 0
+    fMagnification: 0
+    fTargetCount: 0
+    fAttackCount: 0
+    fBulletCount: 0
+    isUnlockSkill: 0
+    canUse: 0
+    isAtctivate: 0
+  - fId: 0
+    sName: 
+    fSkillLevel: 0
+    sDiscription: 
+    fSkillRequireExp: 0
+    fSkillExp: 0
+    fUnlockLevel: 0
+    fUnlockHidenLevel: 0
+    fTimer: 0
+    fCoolTime: 0
+    fDuration: 0
+    fSkillCoolReduce: 0
+    fBuffDuration: 0
+    fRange: 0
+    fValue: 0
+    fMagnification: 0
+    fTargetCount: 0
+    fAttackCount: 0
+    fBulletCount: 0
+    isUnlockSkill: 0
+    canUse: 0
+    isAtctivate: 0
+  - fId: 0
+    sName: 
+    fSkillLevel: 0
+    sDiscription: 
+    fSkillRequireExp: 0
+    fSkillExp: 0
+    fUnlockLevel: 0
+    fUnlockHidenLevel: 0
+    fTimer: 0
+    fCoolTime: 0
+    fDuration: 0
+    fSkillCoolReduce: 0
+    fBuffDuration: 0
+    fRange: 0
+    fValue: 0
+    fMagnification: 0
+    fTargetCount: 0
+    fAttackCount: 0
+    fBulletCount: 0
+    isUnlockSkill: 0
+    canUse: 0
+    isAtctivate: 0
+  - fId: 0
+    sName: 
+    fSkillLevel: 0
+    sDiscription: 
+    fSkillRequireExp: 0
+    fSkillExp: 0
+    fUnlockLevel: 0
+    fUnlockHidenLevel: 0
+    fTimer: 0
+    fCoolTime: 0
+    fDuration: 0
+    fSkillCoolReduce: 0
+    fBuffDuration: 0
+    fRange: 0
+    fValue: 0
+    fMagnification: 0
+    fTargetCount: 0
+    fAttackCount: 0
+    fBulletCount: 0
+    isUnlockSkill: 0
+    canUse: 0
+    isAtctivate: 0
+  - fId: 0
+    sName: 
+    fSkillLevel: 0
+    sDiscription: 
+    fSkillRequireExp: 0
+    fSkillExp: 0
+    fUnlockLevel: 0
+    fUnlockHidenLevel: 0
+    fTimer: 0
+    fCoolTime: 0
+    fDuration: 0
+    fSkillCoolReduce: 0
+    fBuffDuration: 0
+    fRange: 0
+    fValue: 0
+    fMagnification: 0
+    fTargetCount: 0
+    fAttackCount: 0
+    fBulletCount: 0
+    isUnlockSkill: 0
+    canUse: 0
+    isAtctivate: 0
+  - fId: 0
+    sName: 
+    fSkillLevel: 0
+    sDiscription: 
+    fSkillRequireExp: 0
+    fSkillExp: 0
+    fUnlockLevel: 0
+    fUnlockHidenLevel: 0
+    fTimer: 0
+    fCoolTime: 0
+    fDuration: 0
+    fSkillCoolReduce: 0
+    fBuffDuration: 0
+    fRange: 0
+    fValue: 0
+    fMagnification: 0
+    fTargetCount: 0
+    fAttackCount: 0
+    fBulletCount: 0
+    isUnlockSkill: 0
+    canUse: 0
+    isAtctivate: 0
+  - fId: 0
+    sName: 
+    fSkillLevel: 0
+    sDiscription: 
+    fSkillRequireExp: 0
+    fSkillExp: 0
+    fUnlockLevel: 0
+    fUnlockHidenLevel: 0
+    fTimer: 0
+    fCoolTime: 0
+    fDuration: 0
+    fSkillCoolReduce: 0
+    fBuffDuration: 0
+    fRange: 0
+    fValue: 0
+    fMagnification: 0
+    fTargetCount: 0
+    fAttackCount: 0
+    fBulletCount: 0
+    isUnlockSkill: 0
+    canUse: 0
+    isAtctivate: 0
+  - fId: 0
+    sName: 
+    fSkillLevel: 0
+    sDiscription: 
+    fSkillRequireExp: 0
+    fSkillExp: 0
+    fUnlockLevel: 0
+    fUnlockHidenLevel: 0
+    fTimer: 0
+    fCoolTime: 0
+    fDuration: 0
+    fSkillCoolReduce: 0
+    fBuffDuration: 0
+    fRange: 0
+    fValue: 0
+    fMagnification: 0
+    fTargetCount: 0
+    fAttackCount: 0
+    fBulletCount: 0
+    isUnlockSkill: 0
+    canUse: 0
+    isAtctivate: 0
+  - fId: 0
+    sName: 
+    fSkillLevel: 0
+    sDiscription: 
+    fSkillRequireExp: 0
+    fSkillExp: 0
+    fUnlockLevel: 0
+    fUnlockHidenLevel: 0
+    fTimer: 0
+    fCoolTime: 0
+    fDuration: 0
+    fSkillCoolReduce: 0
+    fBuffDuration: 0
+    fRange: 0
+    fValue: 0
+    fMagnification: 0
+    fTargetCount: 0
+    fAttackCount: 0
+    fBulletCount: 0
+    isUnlockSkill: 0
+    canUse: 0
+    isAtctivate: 0
+  - fId: 0
+    sName: 
+    fSkillLevel: 0
+    sDiscription: 
+    fSkillRequireExp: 0
+    fSkillExp: 0
+    fUnlockLevel: 0
+    fUnlockHidenLevel: 0
+    fTimer: 0
+    fCoolTime: 0
+    fDuration: 0
+    fSkillCoolReduce: 0
+    fBuffDuration: 0
+    fRange: 0
+    fValue: 0
+    fMagnification: 0
+    fTargetCount: 0
+    fAttackCount: 0
+    fBulletCount: 0
+    isUnlockSkill: 0
+    canUse: 0
+    isAtctivate: 0
+  - fId: 0
+    sName: 
+    fSkillLevel: 0
+    sDiscription: 
+    fSkillRequireExp: 0
+    fSkillExp: 0
+    fUnlockLevel: 0
+    fUnlockHidenLevel: 0
+    fTimer: 0
+    fCoolTime: 0
+    fDuration: 0
+    fSkillCoolReduce: 0
+    fBuffDuration: 0
+    fRange: 0
+    fValue: 0
+    fMagnification: 0
+    fTargetCount: 0
+    fAttackCount: 0
+    fBulletCount: 0
+    isUnlockSkill: 0
+    canUse: 0
+    isAtctivate: 0
+  - fId: 0
+    sName: 
+    fSkillLevel: 0
+    sDiscription: 
+    fSkillRequireExp: 0
+    fSkillExp: 0
+    fUnlockLevel: 0
+    fUnlockHidenLevel: 0
+    fTimer: 0
+    fCoolTime: 0
+    fDuration: 0
+    fSkillCoolReduce: 0
+    fBuffDuration: 0
+    fRange: 0
+    fValue: 0
+    fMagnification: 0
+    fTargetCount: 0
+    fAttackCount: 0
+    fBulletCount: 0
+    isUnlockSkill: 0
+    canUse: 0
+    isAtctivate: 0
+  - fId: 0
+    sName: 
+    fSkillLevel: 0
+    sDiscription: 
+    fSkillRequireExp: 0
+    fSkillExp: 0
+    fUnlockLevel: 0
+    fUnlockHidenLevel: 0
+    fTimer: 0
+    fCoolTime: 0
+    fDuration: 0
+    fSkillCoolReduce: 0
+    fBuffDuration: 0
+    fRange: 0
+    fValue: 0
+    fMagnification: 0
+    fTargetCount: 0
+    fAttackCount: 0
+    fBulletCount: 0
+    isUnlockSkill: 0
+    canUse: 0
+    isAtctivate: 0
+  - fId: 0
+    sName: 
+    fSkillLevel: 0
+    sDiscription: 
+    fSkillRequireExp: 0
+    fSkillExp: 0
+    fUnlockLevel: 0
+    fUnlockHidenLevel: 0
+    fTimer: 0
+    fCoolTime: 0
+    fDuration: 0
+    fSkillCoolReduce: 0
+    fBuffDuration: 0
+    fRange: 0
+    fValue: 0
+    fMagnification: 0
+    fTargetCount: 0
+    fAttackCount: 0
+    fBulletCount: 0
+    isUnlockSkill: 0
+    canUse: 0
+    isAtctivate: 0
+  - fId: 0
+    sName: 
+    fSkillLevel: 0
+    sDiscription: 
+    fSkillRequireExp: 0
+    fSkillExp: 0
+    fUnlockLevel: 0
+    fUnlockHidenLevel: 0
+    fTimer: 0
+    fCoolTime: 0
+    fDuration: 0
+    fSkillCoolReduce: 0
+    fBuffDuration: 0
+    fRange: 0
+    fValue: 0
+    fMagnification: 0
+    fTargetCount: 0
+    fAttackCount: 0
+    fBulletCount: 0
+    isUnlockSkill: 0
+    canUse: 0
+    isAtctivate: 0
+  - fId: 0
+    sName: 
+    fSkillLevel: 0
+    sDiscription: 
+    fSkillRequireExp: 0
+    fSkillExp: 0
+    fUnlockLevel: 0
+    fUnlockHidenLevel: 0
+    fTimer: 0
+    fCoolTime: 0
+    fDuration: 0
+    fSkillCoolReduce: 0
+    fBuffDuration: 0
+    fRange: 0
+    fValue: 0
+    fMagnification: 0
+    fTargetCount: 0
+    fAttackCount: 0
+    fBulletCount: 0
+    isUnlockSkill: 0
+    canUse: 0
+    isAtctivate: 0
+  - fId: 0
+    sName: 
+    fSkillLevel: 0
+    sDiscription: 
+    fSkillRequireExp: 0
+    fSkillExp: 0
+    fUnlockLevel: 0
+    fUnlockHidenLevel: 0
+    fTimer: 0
+    fCoolTime: 0
+    fDuration: 0
+    fSkillCoolReduce: 0
+    fBuffDuration: 0
+    fRange: 0
+    fValue: 0
+    fMagnification: 0
+    fTargetCount: 0
+    fAttackCount: 0
+    fBulletCount: 0
+    isUnlockSkill: 0
+    canUse: 0
+    isAtctivate: 0
