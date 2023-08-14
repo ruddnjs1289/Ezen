@@ -6,12 +6,12 @@ public class Ex_1Skill : DamageSkill
 {//파라미터는 스크립터블 오브젝트에서 가져오기???해결
     public Skilldatas scriptabledata;//스크립터블오브젝트 인스펙터창
 
-    Dictionary<string, string> dictSkillStat = new Dictionary<string, string>();//딕셔너리 사용
+    Dictionary<string, string> dictSkillStat;//딕셔너리 사용
     void Start()
     {
         SetParams();
     }
-    public override void SetParams()
+    public override void SetParams( )
     {
 
         if(scriptabledata.Skills[0].fId == 1)
